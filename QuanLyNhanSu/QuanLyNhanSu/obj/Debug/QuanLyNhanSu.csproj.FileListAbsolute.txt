@@ -1,0 +1,11 @@
+C:\Users\Hung Nguyen\Desktop\TTCSDL\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+C:\Users\Hung Nguyen\Desktop\TTCSDL\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe
+C:\Users\Hung Nguyen\Desktop\TTCSDL\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.pdb
+C:\Users\Hung Nguyen\Desktop\TTCSDL\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csprojResolveAssemblyReference.cache
+C:\Users\Hung Nguyen\Desktop\TTCSDL\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.LoginForm.resources
+C:\Users\Hung Nguyen\Desktop\TTCSDL\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.MainForm.resources
+C:\Users\Hung Nguyen\Desktop\TTCSDL\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
+C:\Users\Hung Nguyen\Desktop\TTCSDL\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
+C:\Users\Hung Nguyen\Desktop\TTCSDL\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.CoreCompileInputs.cache
+C:\Users\Hung Nguyen\Desktop\TTCSDL\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+C:\Users\Hung Nguyen\Desktop\TTCSDL\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
