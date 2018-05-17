@@ -31,7 +31,9 @@ namespace QuanLyNhanSu.GUI
 
         private void btnQLNhanSu_Click(object sender, EventArgs e)
         {
-
+            QuanLyNhanVien frm = new QuanLyNhanVien();
+            frm.Show();
+          
         }
 
         private void MainForm_Load(object sender, EventArgs e)

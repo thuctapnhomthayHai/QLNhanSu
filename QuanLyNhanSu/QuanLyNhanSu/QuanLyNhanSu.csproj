@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.7.0.2, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -60,6 +61,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyNhanVien.Designer.cs">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -68,13 +75,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuanLyNhanVien.resx">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,6 +97,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\plus-sign-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\if_plus-sign_173078.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Delete_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\save-icon-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\40998218-cancel-icon-delete-button.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
