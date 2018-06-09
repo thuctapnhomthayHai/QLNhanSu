@@ -197,24 +197,28 @@
             // 
             // TAIKHOAN
             // 
+            this.TAIKHOAN.DataPropertyName = "TAIKHOAN";
             this.TAIKHOAN.HeaderText = "Tài Khoản";
             this.TAIKHOAN.Name = "TAIKHOAN";
             this.TAIKHOAN.Width = 205;
             // 
             // MATKHAU
             // 
+            this.MATKHAU.DataPropertyName = "MATKHAU";
             this.MATKHAU.HeaderText = "Mật Khẩu";
             this.MATKHAU.Name = "MATKHAU";
             this.MATKHAU.Width = 205;
             // 
             // IDTAIKHOAN
             // 
+            this.IDTAIKHOAN.DataPropertyName = "IDTAIKHOAN";
             this.IDTAIKHOAN.HeaderText = "ID Tài Khoản";
             this.IDTAIKHOAN.Name = "IDTAIKHOAN";
             this.IDTAIKHOAN.Width = 205;
             // 
             // QUYEN
             // 
+            this.QUYEN.DataPropertyName = "QUYEN";
             this.QUYEN.HeaderText = "Phân Quyền";
             this.QUYEN.Name = "QUYEN";
             this.QUYEN.Width = 205;
@@ -240,6 +244,7 @@
             this.Controls.Add(this.lb1);
             this.Name = "QuanLyNguoiDung";
             this.Text = "QuanLyNguoiDung";
+            this.Load += new System.EventHandler(this.QuanLyNguoiDung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

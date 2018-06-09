@@ -21,6 +21,10 @@ namespace QuanLyNhanSu.GUI
         SqlConnection con = new SqlConnection(@"Data Source=BAOMINH180-PC\sqlexpress;Initial Catalog=QuanLyNhanSu;Integrated Security=True");
         private void show()
         {
+               if(con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
             con.Open();
             string sql = "SELECT * FROM NguoiDung";
             SqlCommand com = new SqlCommand(sql, con);
@@ -81,6 +85,11 @@ namespace QuanLyNhanSu.GUI
             cmd.ExecuteNonQuery();
             show();
             con.Close();
+        }
+
+        private void QuanLyNguoiDung_Load(object sender, EventArgs e)
+        {
+            show();
         }
     }
 }
