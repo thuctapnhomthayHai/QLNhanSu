@@ -32,3 +32,16 @@ D:\Tài liệu\Thực tập nhóm_TH14\QLNhanSu\QLNhanSu\QuanLyNhanSu\QuanLyNhan
 D:\Tài liệu\Thực tập nhóm_TH14\QLNhanSu\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.QuanLyNhanSu.resources
 D:\Tài liệu\Thực tập nhóm_TH14\QLNhanSu\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
 D:\Tài liệu\Thực tập nhóm_TH14\QLNhanSu\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.pdb
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csprojResolveAssemblyReference.cache
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.LoginForm.resources
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.MainForm.resources
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.QuanLyNguoiDung.resources
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.QuanLyNhanSu.resources
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.TimKiemThongTinNS.resources
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
+C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
