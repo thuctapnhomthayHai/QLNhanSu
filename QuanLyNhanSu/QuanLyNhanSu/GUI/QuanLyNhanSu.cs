@@ -385,5 +385,10 @@ namespace QuanLyNhanSu.GUI
             cbxTimKiemTheo.Items.Add(new { Text = "Mã nhân viên", Value = "Mã nhân viên" });
             cbxTimKiemTheo.Items.Add(new { Text = "Mã phòng ban", Value = "Mã phòng ban" });
         }
+
+        private void dt_Ngaysinh_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -254,6 +254,7 @@
             this.dt_Ngaysinh.Size = new System.Drawing.Size(250, 26);
             this.dt_Ngaysinh.TabIndex = 2;
             this.dt_Ngaysinh.Value = new System.DateTime(2018, 6, 9, 0, 0, 0, 0);
+            this.dt_Ngaysinh.ValueChanged += new System.EventHandler(this.dt_Ngaysinh_ValueChanged);
             // 
             // btnThem
             // 
@@ -373,7 +374,7 @@
             this.label14.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(0, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(980, 51);
+            this.label14.Size = new System.Drawing.Size(1063, 51);
             this.label14.TabIndex = 6;
             this.label14.Text = "Quản lý nhân sự";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -384,7 +385,7 @@
             this.dtgNhanSu.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dtgNhanSu.Location = new System.Drawing.Point(0, 414);
             this.dtgNhanSu.Name = "dtgNhanSu";
-            this.dtgNhanSu.Size = new System.Drawing.Size(980, 106);
+            this.dtgNhanSu.Size = new System.Drawing.Size(1063, 106);
             this.dtgNhanSu.TabIndex = 7;
             this.dtgNhanSu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgNhanSu_CellContentClick);
             // 
@@ -392,7 +393,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(980, 520);
+            this.ClientSize = new System.Drawing.Size(1063, 520);
             this.Controls.Add(this.dtgNhanSu);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);

@@ -52,5 +52,10 @@ namespace QuanLyNhanSu.GUI
         {
 
         }
+
+        private void txtUser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

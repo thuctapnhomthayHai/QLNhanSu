@@ -44,6 +44,7 @@
             this.btnQLUser.TabIndex = 2;
             this.btnQLUser.Text = "Quản Lý Người Dùng";
             this.btnQLUser.UseVisualStyleBackColor = true;
+            this.btnQLUser.Click += new System.EventHandler(this.btnQLUser_Click);
             // 
             // btnQLLuong
             // 

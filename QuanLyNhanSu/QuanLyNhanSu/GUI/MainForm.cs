@@ -40,5 +40,11 @@ namespace QuanLyNhanSu.GUI
         {
 
         }
+
+        private void btnQLUser_Click(object sender, EventArgs e)
+        {
+            QuanLyNguoiDung frm = new QuanLyNguoiDung();
+            frm.Show();
+        }
     }
 }
