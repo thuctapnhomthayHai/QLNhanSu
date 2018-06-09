@@ -31,7 +31,7 @@ namespace QuanLyNhanSu.GUI
 
         private void btnQLNhanSu_Click(object sender, EventArgs e)
         {
-            QuanLyNhanVien frm = new QuanLyNhanVien();
+            QuanLyNhanSu frm = new QuanLyNhanSu();
             frm.Show();
           
         }

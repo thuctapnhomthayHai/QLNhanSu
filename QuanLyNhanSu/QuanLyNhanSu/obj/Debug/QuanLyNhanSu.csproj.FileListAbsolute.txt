@@ -16,7 +16,7 @@ D:\Kỳ 6\Thực tập nhóm_TH14\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\Q
 D:\Kỳ 6\Thực tập nhóm_TH14\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.LoginForm.resources
 D:\Kỳ 6\Thực tập nhóm_TH14\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.MainForm.resources
 D:\Kỳ 6\Thực tập nhóm_TH14\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
-D:\Kỳ 6\Thực tập nhóm_TH14\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.QuanLyNhanVien.resources
 D:\Kỳ 6\Thực tập nhóm_TH14\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
 D:\Kỳ 6\Thực tập nhóm_TH14\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe
 D:\Kỳ 6\Thực tập nhóm_TH14\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.pdb
+D:\Kỳ 6\Thực tập nhóm_TH14\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.QuanLyNhanSu.resources
