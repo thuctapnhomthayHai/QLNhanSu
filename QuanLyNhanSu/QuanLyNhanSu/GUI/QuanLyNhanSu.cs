@@ -41,7 +41,7 @@ namespace QuanLyNhanSu.GUI
             txtMaNV.Text = "";
             txtHoTen.Text = "";
             dt_Ngaysinh.Text = "";
-            txtGT.Text = "";
+            cbxGT.Text = "";
             txtSDT.Text = "";
             txtBacLuong.Text = "";
             txtCV.Text = "";
@@ -115,7 +115,7 @@ namespace QuanLyNhanSu.GUI
             txtMaNV.Text = dtgNhanSu.CurrentRow.Cells["MaNV"].Value.ToString();
             txtHoTen.Text = dtgNhanSu.CurrentRow.Cells["HoTen"].Value.ToString();
             txtDT.Text = dtgNhanSu.CurrentRow.Cells["DanToc"].Value.ToString();
-            txtGT.Text = dtgNhanSu.CurrentRow.Cells["GioiTinh"].Value.ToString();
+            cbxGT.Text = dtgNhanSu.CurrentRow.Cells["GioiTinh"].Value.ToString();
             txtQueQuan.Text = dtgNhanSu.CurrentRow.Cells["QueQuan"].Value.ToString();
             dt_Ngaysinh.Text = dtgNhanSu.CurrentRow.Cells["NgaySinh"].Value.ToString();
             txtSDT.Text = dtgNhanSu.CurrentRow.Cells["SoDienThoai"].Value.ToString();
@@ -154,10 +154,10 @@ namespace QuanLyNhanSu.GUI
                 txtDT.Focus();
                 return;
             }
-            if (txtGT.Text == "")
+            if (cbxGT.Text == "")
             {
                 MessageBox.Show("Bạn phải nhập điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtGT.Focus();
+                cbxGT.Focus();
                 return;
             }
             if (txtQueQuan.Text == "   ")
@@ -207,7 +207,7 @@ namespace QuanLyNhanSu.GUI
 
             sql = "UPDATE NhanVien SET  HoTen=N'" + txtHoTen.Text.Trim().ToString() +
                     "',DanToc='" + txtDT.Text.Trim().ToString() +
-                    "',GioiTinh='" + txtGT.Text.ToString() +
+                    "',GioiTinh='" + cbxGT.Text.ToString() +
                     "',QueQuan='" + txtQueQuan.Text.Trim().ToString() +
                     "',NgaySinh='" + dt_Ngaysinh.Text.Trim().ToString() +
                     "',SoDienThoai='" + txtSDT.Text.Trim().ToString() +
@@ -265,10 +265,10 @@ namespace QuanLyNhanSu.GUI
                 txtDT.Focus();
                 return;
             }
-            if (txtGT.Text.Trim().Length == 0)
+            if (cbxGT.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập mã nhà sản xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtGT.Focus();
+                cbxGT.Focus();
                 return;
             }
             if (txtQueQuan.Text == "  ")
@@ -324,7 +324,7 @@ namespace QuanLyNhanSu.GUI
                 txtMaNV.Text = "";
                 return;
             }
-            sql = "INSERT INTO NhanVien(MaNV,HoTen, DanToc,GioiTinh,QueQuan,NgaySinh,SoDienThoai,MaCV,MaPB,MaTDHV,BacLuong) VALUES (N'" + txtMaNV.Text.Trim() + "',N'" + txtHoTen.Text.Trim() + "',N'" + txtDT.Text.Trim() + "',N'" + txtGT.Text + "',N'" + txtQueQuan.Text.Trim() + "','" +
+            sql = "INSERT INTO NhanVien(MaNV,HoTen, DanToc,GioiTinh,QueQuan,NgaySinh,SoDienThoai,MaCV,MaPB,MaTDHV,BacLuong) VALUES (N'" + txtMaNV.Text.Trim() + "',N'" + txtHoTen.Text.Trim() + "',N'" + txtDT.Text.Trim() + "',N'" + cbxGT.Text + "',N'" + txtQueQuan.Text.Trim() + "','" +
                 dt_Ngaysinh.Text + "',N'" + txtSDT.Text.Trim() + "',N'" + txtCV.Text.Trim() + "',N'" + txtPB.Text.Trim() + "',N'" + txtTDHV.Text.Trim()  +"',N'" + txtBacLuong.Text.Trim() + "')";
             //sql1 = "insert into NhaSanXuat(MaNhaSX,TenNhaSX) Values (N'"+null + "',N'" + txtTenNSX.Text.Trim() +"') ";
             //sql2 = "insert into LoaiHang(MaLoai,TenLoai) Values (N'" + null + "',N'" + txtTenLoai.Text.Trim() + "') ";
@@ -393,102 +393,102 @@ namespace QuanLyNhanSu.GUI
 
         }
 
-        private void btnXuatRaFile_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog fsave = new SaveFileDialog();
+        //private void btnXuatRaFile_Click(object sender, EventArgs e)
+        //{
+        //    SaveFileDialog fsave = new SaveFileDialog();
 
-            fsave.Filter = "(Tất cả các tệp)|*.*|(các tệp excel)|*.xlsx";
-            fsave.ShowDialog();
+        //    fsave.Filter = "(Tất cả các tệp)|*.*|(các tệp excel)|*.xlsx";
+        //    fsave.ShowDialog();
 
-            if (fsave.FileName != "")
-            {
-                COMExcel.Application exApp = new COMExcel.Application();
-                COMExcel.Workbook exBook;
-                COMExcel.Worksheet exSheet;
-                COMExcel.Range exRange;
+        //    if (fsave.FileName != "")
+        //    {
+        //        COMExcel.Application exApp = new COMExcel.Application();
+        //        COMExcel.Workbook exBook;
+        //        COMExcel.Worksheet exSheet;
+        //        COMExcel.Range exRange;
 
-                exBook = exApp.Workbooks.Add(COMExcel.XlWBATemplate.xlWBATWorksheet);
-                exSheet = exBook.Worksheets[1];
-                // Định dạng chung
-                exRange = exSheet.Cells[1, 1];
-                exRange.Range["A1:B3"].Font.Size = 14;
-                exRange.Range["A1:B3"].Font.Name = "Times new roman";
-                exRange.Range["A1:B3"].Font.Bold = true;
-                exRange.Range["A1:B3"].Font.ColorIndex = 5; //Màu xanh da trời
+        //        exBook = exApp.Workbooks.Add(COMExcel.XlWBATemplate.xlWBATWorksheet);
+        //        exSheet = exBook.Worksheets[1];
+        //        // Định dạng chung
+        //        exRange = exSheet.Cells[1, 1];
+        //        exRange.Range["A1:B3"].Font.Size = 14;
+        //        exRange.Range["A1:B3"].Font.Name = "Times new roman";
+        //        exRange.Range["A1:B3"].Font.Bold = true;
+        //        exRange.Range["A1:B3"].Font.ColorIndex = 5; //Màu xanh da trời
 
-                exRange.Range["A1:A1"].ColumnWidth = 7;
+        //        exRange.Range["A1:A1"].ColumnWidth = 7;
 
-                exRange.Range["B1:B1"].ColumnWidth = 15;
+        //        exRange.Range["B1:B1"].ColumnWidth = 15;
 
-                exRange.Range["A1:B1"].MergeCells = true;
-                exRange.Range["A1:B1"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-                exRange.Range["A1:B1"].Value = "Quản lý nhân sự";
+        //        exRange.Range["A1:B1"].MergeCells = true;
+        //        exRange.Range["A1:B1"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+        //        exRange.Range["A1:B1"].Value = "Quản lý nhân sự";
 
-                exRange.Range["A1: A100"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-                exRange.Range["D1: D100"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-                exRange.Range["F1: F100"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-                exRange.Range["G1: G100"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-                exRange.Range["H1: H100"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+        //        exRange.Range["A1: A100"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+        //        exRange.Range["D1: D100"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+        //        exRange.Range["F1: F100"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+        //        exRange.Range["G1: G100"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+        //        exRange.Range["H1: H100"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
 
-                exRange.Range["A2:B2"].MergeCells = true;
-                exRange.Range["A2:B2"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-                exRange.Range["A2:B2"].Value = "Nhân Viên";
+        //        exRange.Range["A2:B2"].MergeCells = true;
+        //        exRange.Range["A2:B2"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+        //        exRange.Range["A2:B2"].Value = "Nhân Viên";
 
-                exRange.Range["A3:B3"].MergeCells = true;
-                exRange.Range["A3:B3"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+        //        exRange.Range["A3:B3"].MergeCells = true;
+        //        exRange.Range["A3:B3"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
 
-                exRange.Range["C2:E2"].Font.Size = 16;
-                exRange.Range["C2:E2"].Font.Name = "Times new roman";
-                exRange.Range["C2:E2"].Font.Bold = true;
-                exRange.Range["C2:E2"].Font.ColorIndex = 3; //Màu đỏ
-                exRange.Range["C2:E2"].MergeCells = true;
-                exRange.Range["C2:E2"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-                exRange.Range["C2:E2"].Value = "Danh Sách Nhân Viên";
+        //        exRange.Range["C2:E2"].Font.Size = 16;
+        //        exRange.Range["C2:E2"].Font.Name = "Times new roman";
+        //        exRange.Range["C2:E2"].Font.Bold = true;
+        //        exRange.Range["C2:E2"].Font.ColorIndex = 3; //Màu đỏ
+        //        exRange.Range["C2:E2"].MergeCells = true;
+        //        exRange.Range["C2:E2"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+        //        exRange.Range["C2:E2"].Value = "Danh Sách Nhân Viên";
 
-                exRange.Range["A5"].ColumnWidth = 15;
-                exRange.Range["B5"].ColumnWidth = 25;
-                exRange.Range["C5"].ColumnWidth = 15;
-                exRange.Range["D5"].ColumnWidth = 15;
-                exRange.Range["E5"].ColumnWidth = 30;
-                exRange.Range["F5"].ColumnWidth = 15;
-                exRange.Range["G5"].ColumnWidth = 15;
-                exRange.Range["H5"].ColumnWidth = 15;
-
-
-                exRange.Range["A5:I5"].Font.Size = 14;
-                exRange.Range["A5:I5"].Font.Bold = true;
-                exRange.Range["A5:I5"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-
-                //Lấy tên cột dữ liệu
-                for (int i = 0; i < dtgNhanSu.ColumnCount; i++)
-                {
-                    exSheet.Cells[5, i + 1] = dtgNhanSu.Columns[i].HeaderText;
-                }
-                //Đổ dữ liệu vào sheet
-                for (int i = 0; i < dtgNhanSu.RowCount; i++)
-                {
-                    for (int j = 0; j < dtgNhanSu.ColumnCount; j++)
-                    {
-                        exSheet.Cells[i + 6, j + 1] = dtgNhanSu.Rows[i].Cells[j].Value;
-                    }
-                }
-
-                DateTime d = DateTime.Now;
-                exRange.Range["C3:E3"].Value = "Hà Nội, ngày " + d.Day + " tháng " + d.Month + " năm " + d.Year;
-                exRange.Range["C3:E3"].MergeCells = true;
-                exRange.Range["C3:E3"].Font.Italic = true;
-                exRange.Range["C3:E3"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+        //        exRange.Range["A5"].ColumnWidth = 15;
+        //        exRange.Range["B5"].ColumnWidth = 25;
+        //        exRange.Range["C5"].ColumnWidth = 15;
+        //        exRange.Range["D5"].ColumnWidth = 15;
+        //        exRange.Range["E5"].ColumnWidth = 30;
+        //        exRange.Range["F5"].ColumnWidth = 15;
+        //        exRange.Range["G5"].ColumnWidth = 15;
+        //        exRange.Range["H5"].ColumnWidth = 15;
 
 
-                exApp.Visible = true;
+        //        exRange.Range["A5:I5"].Font.Size = 14;
+        //        exRange.Range["A5:I5"].Font.Bold = true;
+        //        exRange.Range["A5:I5"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
 
-                exBook.SaveAs(fsave.FileName);
-            }
-            else
-            {
-                MessageBox.Show("Bạn phải nhập tên!");
-            }
-        }
+        //        //Lấy tên cột dữ liệu
+        //        for (int i = 0; i < dtgNhanSu.ColumnCount; i++)
+        //        {
+        //            exSheet.Cells[5, i + 1] = dtgNhanSu.Columns[i].HeaderText;
+        //        }
+        //        //Đổ dữ liệu vào sheet
+        //        for (int i = 0; i < dtgNhanSu.RowCount; i++)
+        //        {
+        //            for (int j = 0; j < dtgNhanSu.ColumnCount; j++)
+        //            {
+        //                exSheet.Cells[i + 6, j + 1] = dtgNhanSu.Rows[i].Cells[j].Value;
+        //            }
+        //        }
+
+        //        DateTime d = DateTime.Now;
+        //        exRange.Range["C3:E3"].Value = "Hà Nội, ngày " + d.Day + " tháng " + d.Month + " năm " + d.Year;
+        //        exRange.Range["C3:E3"].MergeCells = true;
+        //        exRange.Range["C3:E3"].Font.Italic = true;
+        //        exRange.Range["C3:E3"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+
+
+        //        exApp.Visible = true;
+
+        //        exBook.SaveAs(fsave.FileName);
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Bạn phải nhập tên!");
+        //    }
+        //}
 
         private void txtHoTen_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -501,6 +501,23 @@ namespace QuanLyNhanSu.GUI
             {
                 e.Handled = true;
             }
+        }
+
+        private void comboBox1_Click(object sender, EventArgs e)
+        {
+            cbxGT.DisplayMember = "Text";
+            cbxGT.ValueMember = "Value";
+
+            cbxGT.Items.Add(new { Text = "Nữ", Value = "Nữ" });
+            cbxGT.Items.Add(new { Text = "Nam", Value = "Nam" });
+        }
+
+        private void txtMaNV_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) || txtMaNV.Text.Length > 3)
+            {
+                e.Handled = true;
+            } 
         }
 
         

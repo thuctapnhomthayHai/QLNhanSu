@@ -45,3 +45,5 @@ C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\Qua
 C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.TimKiemThongTinNS.resources
 C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
 C:\Users\tobmo\Documents\GitHub\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
+D:\Kỳ 6\Thực tập nhóm_TH14\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.QuanLyNguoiDung.resources
+D:\Kỳ 6\Thực tập nhóm_TH14\QLNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.GUI.TimKiemThongTinNS.resources

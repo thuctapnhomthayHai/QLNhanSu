@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyNhanSu));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,7 +42,6 @@
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.txtDT = new System.Windows.Forms.TextBox();
-            this.txtGT = new System.Windows.Forms.TextBox();
             this.txtQueQuan = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtCV = new System.Windows.Forms.TextBox();
@@ -63,7 +61,7 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.dtgNhanSu = new System.Windows.Forms.DataGridView();
-            this.btnXuatRaFile = new System.Windows.Forms.Button();
+            this.cbxGT = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgNhanSu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +95,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(52, 257);
+            this.label4.Location = new System.Drawing.Point(52, 246);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 0;
@@ -174,6 +172,7 @@
             this.txtMaNV.Size = new System.Drawing.Size(140, 26);
             this.txtMaNV.TabIndex = 1;
             this.txtMaNV.TextChanged += new System.EventHandler(this.txtMaNV_TextChanged);
+            this.txtMaNV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaNV_KeyPress);
             // 
             // txtHoTen
             // 
@@ -191,14 +190,6 @@
             this.txtDT.Name = "txtDT";
             this.txtDT.Size = new System.Drawing.Size(140, 26);
             this.txtDT.TabIndex = 3;
-            // 
-            // txtGT
-            // 
-            this.txtGT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGT.Location = new System.Drawing.Point(184, 254);
-            this.txtGT.Name = "txtGT";
-            this.txtGT.Size = new System.Drawing.Size(140, 26);
-            this.txtGT.TabIndex = 4;
             // 
             // txtQueQuan
             // 
@@ -248,7 +239,6 @@
             this.txtBacLuong.Name = "txtBacLuong";
             this.txtBacLuong.Size = new System.Drawing.Size(140, 26);
             this.txtBacLuong.TabIndex = 11;
-//            this.txtBacLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBacLuong_KeyPress);
             // 
             // dt_Ngaysinh
             // 
@@ -395,27 +385,22 @@
             this.dtgNhanSu.TabIndex = 21;
             this.dtgNhanSu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgNhanSu_CellContentClick);
             // 
-            // btnXuatRaFile
+            // cbxGT
             // 
-            this.btnXuatRaFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuatRaFile.ForeColor = System.Drawing.Color.Red;
-            this.btnXuatRaFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatRaFile.Image")));
-            this.btnXuatRaFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatRaFile.Location = new System.Drawing.Point(907, 183);
-            this.btnXuatRaFile.Name = "btnXuatRaFile";
-            this.btnXuatRaFile.Size = new System.Drawing.Size(130, 47);
-            this.btnXuatRaFile.TabIndex = 20;
-            this.btnXuatRaFile.Text = "Xuất ra File";
-            this.btnXuatRaFile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXuatRaFile.UseVisualStyleBackColor = true;
-            this.btnXuatRaFile.Click += new System.EventHandler(this.btnXuatRaFile_Click);
+            this.cbxGT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxGT.FormattingEnabled = true;
+            this.cbxGT.Location = new System.Drawing.Point(184, 243);
+            this.cbxGT.Name = "cbxGT";
+            this.cbxGT.Size = new System.Drawing.Size(140, 27);
+            this.cbxGT.TabIndex = 22;
+            this.cbxGT.Click += new System.EventHandler(this.comboBox1_Click);
             // 
             // QuanLyNhanSu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 520);
-            this.Controls.Add(this.btnXuatRaFile);
+            this.Controls.Add(this.cbxGT);
             this.Controls.Add(this.dtgNhanSu);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -433,7 +418,6 @@
             this.Controls.Add(this.txtCV);
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.txtQueQuan);
-            this.Controls.Add(this.txtGT);
             this.Controls.Add(this.txtDT);
             this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.txtNhap);
@@ -475,7 +459,6 @@
         private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.TextBox txtDT;
-        private System.Windows.Forms.TextBox txtGT;
         private System.Windows.Forms.TextBox txtQueQuan;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtCV;
@@ -495,6 +478,6 @@
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataGridView dtgNhanSu;
-        private System.Windows.Forms.Button btnXuatRaFile;
+        private System.Windows.Forms.ComboBox cbxGT;
     }
 }
