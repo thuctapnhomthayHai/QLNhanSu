@@ -62,6 +62,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.dtgNhanSu = new System.Windows.Forms.DataGridView();
             this.cbxGT = new System.Windows.Forms.ComboBox();
+            this.btnXuat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgNhanSu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -357,7 +358,7 @@
             this.btnTimKiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.Location = new System.Drawing.Point(797, 182);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(75, 47);
+            this.btnTimKiem.Size = new System.Drawing.Size(115, 47);
             this.btnTimKiem.TabIndex = 19;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
@@ -395,11 +396,24 @@
             this.cbxGT.TabIndex = 22;
             this.cbxGT.Click += new System.EventHandler(this.comboBox1_Click);
             // 
+            // btnXuat
+            // 
+            this.btnXuat.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnXuat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuat.Location = new System.Drawing.Point(797, 251);
+            this.btnXuat.Name = "btnXuat";
+            this.btnXuat.Size = new System.Drawing.Size(115, 47);
+            this.btnXuat.TabIndex = 23;
+            this.btnXuat.Text = "Xuất ra File";
+            this.btnXuat.UseVisualStyleBackColor = false;
+            this.btnXuat.Click += new System.EventHandler(this.btnXuat_Click);
+            // 
             // QuanLyNhanSu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 520);
+            this.Controls.Add(this.btnXuat);
             this.Controls.Add(this.cbxGT);
             this.Controls.Add(this.dtgNhanSu);
             this.Controls.Add(this.label14);
@@ -479,5 +493,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataGridView dtgNhanSu;
         private System.Windows.Forms.ComboBox cbxGT;
+        private System.Windows.Forms.Button btnXuat;
     }
 }
